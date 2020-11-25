@@ -1,0 +1,846 @@
+HTML:
+
+hypertextmarkup language
+
+contains predefined tags. 
+
+using these tags to develop front end application.
+we design or we develop web based application
+for ex: facebook, gmail, google
+
+basic markuplanguage
+
+css+ javscript+bootstrap+typescript+angular+react js
+
+these all front end applications needs one of the basic markuplanguage
+i.e HTML
+
+HTML the content code included inside tgas or elements
+
+<html> </html>
+
+the tags in html enclosed or souurended by angular braces.
+
+
+HTML is developed by Tim Berner 1989 , 
+1992 html 2.0 
+
+XHTML -extensiable hypertext markup language.
+
+HTML 5.0 tags.
+<svg>
+<canvas>
+<audio>
+<video>
+<source>
+
+
+HTml tags:
+------------
+basic tags  
+
+
+<!DOCTYPE html>
+<html>-- opening tag
+
+
+
+</html> --closeing tag
+
+
+Html is not a case sensitive tags.
+
+
+<html> or <HTML>
+
+html support proper and improper nesting
+
+
+Basic HTML tags 
+-----------------
+  <html> <head> <body> <title>
+
+  
+  <head>-- title, javscript code(function definition code),
+           vbscript,  Cascading style sheets , 
+		   meta tags <meta charset=UTF-8>  
+		   
+		   
+  <title> it contains title of the document </title>
+  
+  
+  <body> it contains all tags or elemnets , fucntion call tags , css 
+
+  
+  
+  
+  
+<!DOCTYPE html>  html5 version 
+<html>--root elements 
+<head>
+<title>hellow world program</title>
+</head>
+<body>
+content or tags
+</body>
+</html>
+
+
+Note:to run html program we require one of the broswer
+ google chrome, internet exploer, mozilla, microsoft edge, ....
+ 
+ 
+ Basic IDE: notepad, notepad++
+ 
+ Advanced: visual studio code, subllime, Atom 
+
+
+ 
+ Baic HTML program
+ ---------------------------
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Hello World</title>
+<body>
+Welcome to HTML program
+</body>
+</html>
+
+
+Heading tags in html
+--------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<title>heading tags</title>
+<body>
+
+<!--here h1 tag appears a largerfont size-->
+<h1>welcome to HTML</h1>
+<h2>welcome to HTML</h2>
+<h3>welcome to HTML</h3>
+<h4>welcome to HTML</h4>
+<h5>welcome to HTML</h5>
+<h6>welcome to HTML</h6>
+</body>
+</html>
+
+
+In the above example we included comment 
+here in html comment is not executed by the engine.
+
+simply ignored by the browser.
+
+in the above example <h1> tag content appears bigger font size than
+other heading tgs.
+
+
+
+paragraph Tags:
+-------------------------
+<p> tag represents here as paragraph 
+in this html <p> consist content 
+it follows like this syntax:
+
+<p>
+
+content
+</p>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>heading tags</title>
+<body>
+
+<p>
+
+In the above example we included comment 
+here in html comment is not executed by the engine.
+
+simply ignored by the browser.
+
+in the above example <h1> tag content appears bigger font size than
+other heading tgs.
+</p>
+
+</body>
+</html>
+
+In the html browser ignores white space or empty space .
+even though if we gives space simply it ignore empty space in html.
+so  the above ex is related paragraph 
+
+
+
+<pre>tag:
+----------------------------------------------
+in html pre tag doesnot ignore any whitespace or empty space.
+
+example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>heading tags</title>
+<body>
+
+<pre>
+
+In the above example we included comment 
+here in html comment is not executed by the engine.
+
+simply ignored by the browser.
+
+in the above example <h1> tag content appears bigger font size than
+other heading tgs.
+</pre>
+
+</body>
+</html>
+
+
+in the above example we gives some space but it shows same as on a broswer .
+
+
+	
+
+Note: in thml <div>tag is similer to <p> tag becuase divisiion tag 
+ignores whitespace characters.
+
+
+
+Line Break in html:
+----------------------------------------------
+In html we used <br> tag , using this tag we break the line .
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>heading tags</title>
+<body>
+
+<div>
+
+In the above example we included comment <br><hr>
+here in html comment <br>is not executed by the engine.
+
+simply ignored by the browser.
+
+in the above example <br><h1> tag content appears bigger font size than
+other heading tgs.
+</div>
+
+</body>
+</html>
+
+
+In the above example we incuded <br> tag.
+
+Note: br tag only singled paired tag.
+html support mainly two types of tags.
+
+
+paired tags: <html></html>, <head></head>,<p> </p>
+Unpaired Tags: <br>, <hr>
+
+
+<font> Tag:
+-------------------------------------------
+
+	In html u want apply any other styles we mainly used <font> tagor else
+	using bgcolor attribute for the body tag we can style
+	
+	syntax:
+	<font attribute1=value, attribute2=value></font>
+	
+	
+	<!DOCTYPE html>
+<html>
+<head>
+<title>heading tags</title>
+<body bgcolor="yellow">
+
+<div>
+
+<font color="red"  size="5px" > <center> In the above example we included comment</center> <br><hr></font>
+here in html comment <br>is not executed by the engine.
+
+simply ignored by the browser.
+
+<font color="blue">in the above example <br><h1> tag content appears bigger font size than
+other heading tgs.
+</div>
+
+</body>
+</html>
+
+
+
+formatting tags in html
+-----------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>heading tags</title>
+<body bgcolor="yellow">
+
+<!--formating tags in html-->
+<b>Hello World</b><br>
+<i>Hello World</i><br>
+<u>Hello World</u><br>
+<strong>Hello World</strong><br>
+<s>Hello World</s><br>
+<small>Hello world</small><br>
+a<sup>2</sup>+b<sup>2</sup>+c<br>
+H<sub>2</sub>SO<sub>4</sub><br>
+<q>Hello World</q>
+</body>
+</html>
+
+
+
+
+<marquee> tag:
+-------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>heading tags</title>
+<body bgcolor="yellow">
+
+<marquee>marquee tag in html</marquee><br>
+<marquee direction="right">marquee tag in html</marquee><br>
+<marquee direction="up">marquee tag in html</marquee>
+</body>
+</html>
+
+
+
+<img> tag html:
+-------------------------------------------------
+we insert image in html in two ways either we follows using
+Absolute URL
+Relative URL
+
+here absolute means insert image with a proper path, in this case
+image exist in some other location
+
+where as if it is relative URL image file and html file exist
+within the same location .
+
+
+it follows the given synatx:
+<img src="URL" height="" width="" alt=""></img>
+
+
+images are having diff extensions.
+ex: jpg or jpeg  ,  gif,  svg, bmp  .....
+
+
+insert image in html:
+-------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>heading tags</title>
+<body>
+<!--here the example of relative url-->
+<img src="ganesh.jpg" height="100" width="100" align="right"/>
+
+<!--here example of insert the image with absolute url-->
+<img src="D:\fullstack\food.jpg" height="500" width="500"/>
+
+
+
+</body>
+</html>
+
+
+
+Insert Emoji :
+-------------------
+Look like images ,icons but not 
+these are the letters of from the character set.
+
+
+	<!DOCTYPE html>
+<html>
+<head>
+<title>heading tags</title>
+<body>
+<p>&#65</p>
+<p>&#97</p>
+<p>&#128524</p>
+<p>&#128525</p>
+<p>&#128526</p>
+<p>&#128527</p>
+<p>&#128528</p>
+<p>&#128529</p>
+</body>
+</html>
+
+
+
+
+Link Tag or Anchor tag html:
+--------------------------------------
+<a>   using link tag  we connect from one web page into
+Another webpage.
+
+
+
+syntax:
+<a href="URL" >text</a>
+
+href= hyper reference
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>heading tags</title>
+<body>
+<a href="Test.html">click here</a>
+</body>
+</html>
+
+
+
+
+Table Tag in html:
+-------------------------------------------
+table is a combination of rows and columns
+
+it contains heading as well as it contains data.
+
+<html>
+<head>
+</head>
+<body bgcolor="yellow">
+
+<table border="1px" bordercolor="red" cellspacing="10" cellpadding="10">
+<caption>Time Table</caption>
+<tr>
+<th>1st hour</th>
+<th>2nd hour</th>
+<th rowspan="7">B <br>R <br>E<br>A<br>k</th>
+<th>3rd hour</th>
+</tr>
+<tr>
+<td>Maths</td>
+<td>Electronics</td>
+<td>Computers</td>
+</tr>
+<tr>
+<td>Maths</td>
+<td>Electronics</td>
+<td>Computers</td>
+</tr>
+<tr>
+<td>Maths</td>
+<td>Electronics</td>
+<td>Computers</td>
+</tr>
+<tr>
+<td>Maths</td>
+<td>Electronics</td>
+<td>Computers</td>
+</tr>
+
+</table>
+</html>
+
+
+
+List in html'-
+-----------------------
+in html if we want to display the content in any specific order then
+we use this concept.
+
+
+here list in html are mainlt three types 
+
+1. order list
+2. umoder list
+3. definition list
+
+1. order list:<ol>
+--------------''
+if we want to display the content in like order wise then 
+
+<html>
+<head>
+</head>
+<body>
+<ol type="i">
+<li>C programm</li>
+<li>C++ programm</li>
+<li>java program</li>
+</ol>
+</table>
+</html>
+
+
+2. Unorder list : or Bullet list<ul>
+
+<ul type="desc">
+<li>C programm</li>
+<li>C++ programm</li>
+<li>java program</li>
+</ul>
+
+3. definition list: <dl>
+<dl>
+<dt>CPU</dt>
+<dd>Central processing unit</dd>
+</dl>
+
+
+
+
+<html>
+<head>
+</head>
+<body>
+<ol type="i">
+<li>C programm</li>
+<li>C++ programm</li>
+<li>java program</li>
+</ol>
+<ul type="square">
+<li>C programm</li>
+<li>C++ programm</li>
+<li>java program</li>
+</ul>
+<dl>
+<dt>CPU</dt>
+<dd>Central processing unit</dd>
+</dl>
+</table>
+</html>
+
+
+Frameset In html:
+--------------------------
+
+Note: when we include frameset tag in html then body tag is not necessary.
+
+main.html
+<html>
+<head>
+</head>
+<frameset rows="20%,80%">
+<frame name="f1" src="home.html">
+<frameset cols="50%,50%">
+<frame name="f2" src="About.html" >
+<frame name="f3">
+</frameset>
+</html>
+
+
+home.html
+---------------------------
+<html>
+<body>
+<center><h1>Principal global Services</h></center>
+<b>Email :<br>
+fax No: 
+</b>
+</body>
+</html>
+
+
+About.html
+--------------------------
+<html>
+<body>
+<h2>About html</h2>
+<a href="Test.html" target="f3">Click here to get conatact list</a><br>
+<a href="First.html" target="f3">Click here to get Admin list</a><br>
+<a href="Test.html" target="f3">Click here to get Prodcution list list</a><br>
+</body>
+</html>
+
+
+
+
+
+HTML form concept:
+--------------------------------
+
+1. text box
+2. password box
+3. email
+4. check box
+5. radio
+6. selection
+7. address
+8. submit
+9. cancel or reset''
+
+
+
+Html5 related tags:
+-----------------------------
+Html5 version is now the latest version in HTML. 
+in this version we discuss some of the tags we used those are
+
+1. <svg> 
+2.  <audio>
+3. <video>
+4.<canvas>
+5.  Drag and drop 
+6. Geolocation
+7. Persistent
+
+
+
+1. svg: here svg stands for scalar vector graphics images.
+it is basically 2d graphics.(x-axis, y-axis)
+line diagram, circle, rectangle .......
+
+jpeg (joint photographic expert group)
+gif (graphical interchange format)
+bmp( bitmap image)
+svg (scalar vector graphic images.)
+
+
+
+<svg>
+----
+-------
+</svg>
+
+
+
+Example  program using <svg>
+================================
+
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<svg width=400 height=400 style="border:3px solid green">
+</svg>
+</body>
+</html>
+
+In the above example program width, height are the attributes having
+pixels of 400 .
+
+style is a style to add styles for existing html page.
+
+
+
+
+example program on circle using svg tag:
+-------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<svg width=200 height=200 style="border: 1px solid green">
+<circle cx="100px" cy="100px" r="50" fill="yellow" 
+         stroke="blue" stroke-width="8px"/>
+
+</svg>
+</body>
+</html>
+
+
+
+
+Example program on Rectangle using svg tag:
+---------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<svg width=200 height=200 style="border: 1px solid green">
+<rect x=20 y=20 width=100 height=50 fill="cyan" 
+      stroke="red" stroke-width="4px">
+</svg>
+</body>
+</html>
+
+
+
+
+Example program on line using svg tag:
+----------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<svg width=400 height=400 style="border: 1px solid green">
+
+<line x1=20 y1=20 x2=100 y2=100 stroke="red" stroke-width="2px"/>
+</svg>
+</body>
+</html>
+
+
+Example program to create Ellipse using svg :
+-----------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<svg width=400 height=400 style="border: 1px solid green">
+
+<ellipse  cx="200" cy="200" x="100px" y="100px" rx="100" ry="50" 
+          fill="red" stroke="blue" stroke-width="5px"/>
+</svg>
+</body>
+</html>
+
+
+
+
+Audio:
+----------------------
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<audio controls autoplay>
+<source src="D:\fullstack\song.mp3" type="audio/mp3"/>
+</audio>
+
+</body>
+</html>
+
+
+Video:
+---------------------------
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<video width=200 height=200 controls autoplay>
+<source src="D:\fullstack\video.mp4" type="video/mp4"/>
+</video>
+
+</body>
+</html>
+
+
+
+Html5  canvas elements:
+--------------------------
+<canvas>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<canvas  width=100  height=100 style="border:4px solid red"></canvas>
+
+</body>
+</html>
+
+
+
+Exaample program to create line using canvas element:
+--------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+canvas
+{
+border:4px solid red;
+}
+</style>
+
+<script type="text/javascript">
+window.onload=function()
+{
+var canvas=document.getElementById("mycanvas");
+var context=canvas.getContext("2d");
+
+context.lineWidth=10;
+context.strokeStyle='orange';
+context.moveTo(50,100);
+context.lineTo(250,50);
+context.stroke();
+
+
+
+}
+</script>
+</head>
+<body>
+<canvas id="mycanvas" width=400  height=400 ></canvas>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+hyper : web
+text:  web page
+markup: predefined
+
+
+
+	
+
+
+
+
+
+
+
+
+
