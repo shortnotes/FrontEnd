@@ -1,0 +1,591 @@
+CSS :
+(Cascading style sheet)
+
+USing css we apply styles in HTML. only CSS useful for
+applying syles in HTML. CSS code we always embedded in HTML.
+
+
+Advantage of CSS:
+----------------------------
+--code reusability
+--css saves our time
+--Easy to maintain the code
+--css javscript,vbscript ,Angular, React(Compatability)
+--Using CSS we apply mutiple properties(background, text, border, image)
+
+
+
+
+syntax Of CSS:
+----------------
+selector{property: value}
+h1{color:red}
+         ---declaration---
+		 OR
+selector{property1: value1,property2: value2,property3:value3.......}
+h1{color:red, size: 12px, background-color:red}
+
+
+h1
+{
+color:red;
+background-color:yellow;
+}
+
+
+Selectors  in CSS:
+------------------------
+
+selector it is one of the tag name or element for applying styles
+
+
+mainly 3 types of selectors
+1. class selector
+2. id selector
+3. mutiple selector
+
+How we embedded css in html is we use one of the main tag i.e
+
+<style>
+
+</style>
+
+
+here style tag it has some ofthe attributes. that attribute is type 
+
+<style type="text/css">
+
+</style>
+
+
+1. class Selectors:
+-------------------------
+
+in css class selector follows with class attribute and there value.
+whenever we add styles  in style tag, we should starts with '.' dot
+operator with attribute value.
+
+<html>
+<head>
+<style type="text/css">
+.first
+{
+color:red;
+text-align:center;
+}
+.second
+{
+color:blue;
+text-align:center;
+}
+</style>
+</head>
+<body>
+<p class="first">Hello World</p>
+<h1 class="second">Heading tag in html</h1>
+</body>
+</html>
+
+
+2. Id selectors:
+--------------------------------
+in css id selector must follows one of the attribute in tag name or element name
+declaration--- i.e id attribute , and for adding id selector
+styles then it start with # symbol character.
+
+<html>
+<head>
+<style type="text/css">
+#first
+{
+color:red;
+text-align:center;
+background-color:yellow;
+}
+#second
+{
+color:blue;
+text-align:center;
+}
+</style>
+</head>
+<body>
+<p id="first">Hello World</p>
+<h1 id="second">Heading tag in html</h1>
+</body>
+</html>
+
+
+
+3. Group Selectors:
+--------------------------------------------------------
+
+<html>
+<head>
+<style type="text/css">
+.one
+{
+text-align:center;
+color:red;
+}
+.two
+{
+text-align:center;
+color:red;
+}
+.three
+{
+text-align:center;s
+color:red;
+}
+</style>
+</head>
+<body>
+<h1 class="one">Welcome to CSS program</h1>
+<h2 class="two">Welcome to HTML programm</h2>
+<p class="three">Welcome to javascript program</p>
+</body>
+</html>
+
+
+
+group selector 
+===================================================
+Add all tag in single then we apply styles known as group selector
+
+<html>
+<head>
+<style type="text/css">
+h1,h2,p
+{
+color:red;
+}
+</style>
+</head>
+<body>
+<h1>Welcome to CSS program</h1>
+<h2>Welcome to HTML programm</h2>
+<p>Welcome to javascript program</p>
+</body>
+</html>
+
+
+CSS comments:
+------------------------------------------
+comments simply ignored by interpreter
+
+html, css, javscript the code which is executed by    "   interpreter ""
+c, c++ the program      'compiler' 
+
+
+commenents are not executed by the interpreter.
+
+/* comment code */
+
+
+<html>
+<head>
+<style type="text/css">
+h1,h2,p
+{
+/*group selectors in css*/-- comment in html
+color:red;
+}
+</style>
+</head>
+<body>
+
+<h1>Welcome to CSS program</h1>
+<h2>Welcome to HTML programm</h2>
+<p>Welcome to javascript program</p>
+</body>
+</html>
+
+
+
+
+
+Where we include the css :
+--------------------------------------
+if u want to include the css code in html then u follows the 
+following ways.
+
+There are 3 ways to incllude css code in html
+
+1. external style sheet
+2. Internal style sheet(Embedded style sheet)
+3. inline style sheet
+
+
+
+1. External style sheet:
+---------------------------------------
+With an external style sheet you can change the look of an entire
+website by using just one file.
+
+External style sheet we include from outside of the html programm.
+
+We save the external style sheet prrogram as with .css extension.
+and that should be included in html file by using
+one of the tag i.e <link>
+
+<link rel="stylesheet" type="text/css" href="mystyle.css"></link>
+
+
+
+
+first.html
+-----------------------------------
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css"></link>
+</head>
+<body>
+<h1>Welcome to CSS program</h1>
+<h2>Welcome to HTML programm</h2>
+<p>Welcome to javascript program</p>
+</body>
+</html>
+
+
+
+mystyle.css:
+==========================
+h1
+{
+color:red;
+text-align:left;
+}
+h2
+{
+color:blue;
+text-align: center;
+}
+p
+{
+color:yellow;
+text-align: right;
+}
+
+
+
+
+2. Internal style sheet or Embedded style sheet:
+-------------------------------------------------------------
+Internal style mean adding styles in Head section in html
+is known as Internal style sheet.
+
+
+
+<html>
+<head>
+<style type="text/css">
+h1,h2,p
+{
+color:red;
+text-align:center;
+}
+</style>
+</head>
+<body>
+<h1>Welcome to CSS program</h1>
+<h2>Welcome to HTML programm</h2>
+<p>Welcome to javascript program</p>
+</body>
+</html>
+
+
+
+3. Inline style sheet:
+-----------------------------------------
+Inline  style may be used to apply a unique 
+style for a single element.
+
+
+
+<html>
+<head>
+
+</head>
+<body>
+<h1 style="color:red; text-align:center;">Welcome to CSS program</h1>
+<h2 style="color:blue; text-align:center;">Welcome to HTML programm</h2>
+<p style="color:green; text-align:center;">Welcome to javascript program</p>
+</body>
+</html>
+
+
+
+CSS- Background:
+------------------------------------------------------
+The CSS background properties are used to define the background
+effects for elements.
+
+background-color
+background-image
+background-repeat
+background-position
+
+
+
+1. background-color:
+The background-color property specified the background-color of an element.
+
+
+Example:
+
+body
+{
+background-color: red;
+}
+
+
+<html>
+<head>
+<style type="text/css">
+body
+{
+
+background-image:url('ganesh.jpg');
+}
+</style>
+</head>
+<body>
+<h1 >Welcome to CSS program</h1>
+<h2 >Welcome to HTML programm</h2>
+<p >Welcome to javascript program</p>
+</body>
+</html>
+
+
+
+
+Example2:
+--------------
+in the below example program image file repeated in y dimension 
+similerly we change the value as repeat-x dimesnion or repeat
+
+<html>
+<head>
+<style type="text/css">
+body
+{
+
+background-image:url('ganesh.jpg');
+background-repeat: repeat-y;
+}
+</style>
+</head>
+<body>
+<h1 >Welcome to CSS program</h1>
+<h2 >Welcome to HTML programm</h2>
+<p >Welcome to javascript program</p>
+</body>
+</html>
+
+
+
+
+CSS Border Properties:
+------------------------------
+In css the following are the border properties . They are
+
+1. dotted
+2.dashed
+3. solid
+4. double
+5.groove....
+
+
+<html>
+<head>
+<title>border properties</title>
+<style type="text/css">
+.one{ border-style:dotted; border-width:4px; border-color:#ff0000}
+.two{ border-style:dashed; border-width:2px; border-color:#ff0000}
+.three{ border-style:solid; border-width:3px; border-color:#ff0000}
+.four{ border-style:double; border-width:4px; border-color:#ff0000 }
+.five{ border-style:groove; border-width:5px; border-color:#ff0000}
+.six{ border-style: ridge; border-width:6px; border-color:#ff0000}
+</style>
+</head>
+<body>
+<p class="one">Welcome to Border properties</p>
+<p class="two">Welcome to Border properties</p>
+<p class="three">Welcome to Border properties</p>
+<p class="four">Welcome to Border properties</p>
+<p class="five">Welcome to Border properties</p>
+<p class="six">Welcome to Border properties</p>
+</body>
+</html>
+
+
+
+
+
+example2:
+<html>
+<head>
+<title>border properties</title>
+<style type="text/css">
+.one{  border-left:10px solid red;}
+.two{  border-right:10px solid blue;}
+.th{  border-bottom:10px solid green;}
+.f{  border-top:10px solid cyan;}
+
+</style>
+</head>
+<body>
+<p class="one">Welcome to Border properties</p>
+<p class="two">Welcome to Border properties</p>
+<p class="th">Welcome to Border properties</p>
+<p class="f">Welcome to Border properties</p>
+</body>
+</html>
+
+
+
+CSS Margins:
+----------------------
+The Css margin prooperties are used to create
+space around elements outside of any defined borders.
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+
+
+
+<html>
+<head>
+<title>border properties</title>
+<style type="text/css">
+p
+{
+margin-top:100px;
+margin-left:100px;
+margin-right:200px;
+margin-botton:200px;
+}
+</style>
+</head>
+<body>
+<p class="one">
+CSS Margins:
+----------------------
+The Css margin prooperties are used to create
+space around elements outside of any defined borders.
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+</p>
+</body>
+</html>
+
+
+
+
+CSS Padding:
+------------------------------------------------
+
+
+providing space around the element 
+
+
+
+padding-top
+padding-bottom
+padding-left
+padding-right
+
+
+
+
+<html>
+<head>
+<style type="text/css">
+.one
+{
+padding-top: 50px;
+padding-bottom:50px;
+padding-left:100px;
+padding-right:30px;
+}
+</style>
+</head>
+<body>
+
+<pre class="one">
+CSS Margins:
+----------------------
+The Css margin prooperties are used to create
+space around elements outside of any defined borders.
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+</pre>
+
+
+<pre>
+CSS Margins:
+----------------------
+The Css margin prooperties are used to create
+space around elements outside of any defined borders.
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+</pre>
+
+
+</body>
+</html>
+
+
+
+CSS text properties:
+---------------------------
+<html>
+<head>
+<style type="text/css">
+h1{color:red;text-transform:uppercase}
+h2{color:green;text-decoration:overline}
+h3{color:blue;text-decoration:line-through;text-transform:capitalize}
+h4{color:yellow;text-decoration:underline}
+h5{color:orange;text-transform:lowercase}
+
+</style>
+</head>
+<body>
+<h1>Css Text properties </h1>
+<h2>CSS Text align properties</h2>
+<h3>css text color properties</h3>
+<h4>CSS TExt decoration properties</h4>
+<h5>CSS text transfomation properties</h5>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		 
