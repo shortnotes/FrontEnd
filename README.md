@@ -6,4 +6,5 @@
 
 [Day 03: Javascript](/javascript.txt)
 
+[Day 03: React Intro](/React_Intro.txt)
 
