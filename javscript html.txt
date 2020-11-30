@@ -1,0 +1,1143 @@
+javacscript:
+--------------------
+javascript is a scrpting program for useful to develop front end applications,
+
+But recently they were developed node.js so from node.js application javscript
+useful as backend application also.
+
+javacsript is implemented in many other application 
+angular, typescript, reactjs, nodejs, jquery 
+MOngoDB 
+
+javascriptscript is one of concept is developed by brendon eiche 1995.
+live script.
+
+
+
+java it is Object Oriented Programm and it supports OOPS,
+class, object, polymorphism,
+
+
+javascrit is script based program  language or Object based language
+. 2015 javascript also introduced some
+of the features like 
+
+class
+object
+const
+let
+array
+arrowfunction or lamda expression
+var
+
+
+
+javascript is implements some features in the year 2015 .
+
+ECMA 2015
+(European Computer Manufacturer Association)
+
+ECMA 2015 standard or ES6 standards: Any 
+
+
+javascript is a light weight program, 
+
+
+javascript: 
+--javscript support operators
+--javscripts data typescript
+--javascript supports array , Object 
+--javascript is also control statement
+--string 
+--event handling Mechanism
+---validate form
+
+
+Data types:
+------------------------
+number
+boolean
+null
+string
+
+
+javascript also embedded in html
+synatx:
+
+<script type="text/javascript">
+-----
+</script>
+
+OR
+
+<script language="javascript">
+----
+</script>
+
+
+Basic Example program to inclue javascript code in Body section HTML:
+--------------------------------------------------------------
+
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+document.write("Hello world");
+</script>
+</body>
+</html>
+
+
+Example program to include Javscript code in Head Section:
+-------------------------------------------------------------------
+<html>
+<head>
+<script type="text/javascript">
+document.write("Hello world");
+</script>
+</head>
+<body>
+</body>
+</html>
+
+
+
+Operators:
+-----------------------------
+Operator is a symbol performs action between the operands.
+
+
+
+1. Arithmetic 
++   5+2=7 
+-
+*
+/
+%
+
+
+2. Assignement Operator:
+=
+var a=10;
++=
+-+
+*=
+/=
+%=
+4
+3. String Operators:
+----------------------
++ 
+var str1="sravan";
+var str2="reddy";
+var str3=str1+str2;
+    str3="sravanreddy"
+	
+	In this example + is an concatenation 
+	
+	
+4. comparission Operators:OR Relational Operators
+----------------------------------
+<
+>
+<=
+>=
+!=
+==
+
+5. Logical Operator:
+------------------
+&&
+||
+!
+
+
+
+
+
+
+
+
+Control Statements in Javscript:
+--------------------------------
+control statements in java is useful for controlling the flow of execution
+
+conditional 
+Iterative Or Loop statement
+
+
+conditional statatements:
+if 
+if-else
+elseif
+nestedif
+switch
+
+
+loop statement:
+for
+while
+do-while
+
+
+
+
+function in javascript:
+----------------------------
+Definition: a function is a statements or a group of statement executed by a single unit.
+In javascript function definition defined in following ways
+
+syntax: 
+
+function function name()
+{
+statements;
+}
+
+Note: function definition in javascript we write either in head section or
+in body section.
+but function definition execution only possible through function calling
+
+
+function call: function call in javascript invokes function definition .
+syntax:
+ functionname();
+
+ or
+ 
+ using event trigger mechanism to invoke the function definition.
+ 
+ 
+ 
+ 
+ Example program on function using event trigger mechanism:
+ ----------------------------------------------------------
+ <html>
+<head>
+<script type="text/javascript">
+function display()
+{
+document.write("welcome to javascript functions"+"<br>");
+document.write("function definition");
+}
+</script>
+</head>
+<body>
+<form>
+<input type="button" value="submit" onclick="display()">
+</form>
+</body>
+</html>
+
+
+Note: in the above example onclick is an event , similerly
+javscript support many event handling mechanisms they are
+--> onclick
+-->ondblclick
+-->onmouseover
+-->onmouseout
+->onload .....
+etc 
+
+
+
+
+
+
+
+Example program on function calling:
+----------------------------------------------------------
+<html>
+<head>
+<script type="text/javascript">
+function display()
+{
+document.write("welcome to javascript functions"+"<br>");
+document.write("function definition");
+}
+display();
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+Example program on function with parameters:
+--------------------------------------------------
+<html>
+<head>
+<script type="text/javascript">
+function display(name,age)
+{
+document.write("name is=  "+name+"  age is"+age);
+}
+</script>
+</head>
+<body>
+<form>
+<input type="button" value="submit" onclick="display('shravan',28)"/>
+</form>
+</body>
+</html>
+
+
+
+example2:
+----------------
+<html>
+<head>
+<script type="text/javascript">
+function display(name,age)
+{
+document.write("name is=  "+name+"  age is"+age);
+}
+display('timeberner',56);
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+Javascript display possibilities:
+--------------------------------------------
+in javascript to display content we follows the gien ways.
+
+1) Writing into an HTML using innerHTML
+2) Writing into an HTMl using document object
+3) using window.alert()
+4) using console.log() 
+
+
+1. Using InnerHTML:
+------------------------
+<html>
+<head>
+</head>
+<body>
+
+<h2>Using innerHTMl </h2>
+<p id="demo">getElement ById method we are using</p>
+<button type="button" onclick='document.getElementById("demo").innerHTML="Hello javscript!"'>
+click here</button>
+
+
+</body>
+</html>
+
+
+2)Using document.write()
+---------------------------------------------
+<html>
+<head>
+<script type="text/javascript">
+function display()
+{
+document.write("welcome to javascript functions"+"<br>");
+document.write("function definition");
+}
+display();
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+3)using window.alert()
+------------------------------------
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+window.alert("window alert method in  javscript");
+</script>
+</body>
+</html>
+
+
+
+4)using console.log() 
+--------------------------------------------------
+Note: in javscript using console object we print the javascript code
+on console scree. 
+in the following example using log method to print text on console screen....
+
+
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+console.log("welcome to console part");
+console.log("console related output");
+</script>
+</body>
+</html>
+
+
+
+Ways to embedded javscript code in HTML:
+------------------------------------------------------------
+
+To embedded script code in html we follows the given ways.
+1. body
+2. head
+3. using external file
+
+
+3. Using External file:
+-------------------------------------------
+In javascript using external file to include the code,
+in the following examples are included javascript code in external file
+
+Test.js
+---------------------------
+<html>
+<head>
+<script src="extern.js" type="text/javascript" >
+</script>
+</head>
+<body>
+<input type="button" value="click" onclick="display()"/>
+</body>
+</html>
+
+
+extern.js
+---------------------------------------
+function display()
+{
+window.alert("external js file");
+}
+
+Note: In external file inclusion in javascript both file must be
+included in the same location.
+
+
+
+
+ECMA2015 OR ES6 standard javascript includes these below features.
+
+let & var keyword:
+-------------------------------------------
+
+
+<html>
+<head>
+</head>
+<body>
+<script language="javascript">
+function display()
+{
+for(let i=0;i<=5;i++)
+{
+console.log(i);
+}
+}
+display();
+</script>
+</body>
+</html>
+
+
+
+Ex2:
+---------------
+<html>
+<head>
+</head>
+<body>
+<script language="javascript">
+function display()
+{
+for(let i=0;i<=5;i++)
+{
+console.log(i);//scope of the i variable only inside 
+}
+console.log(i);//outside scope of the let keyword
+}
+display();
+</script>
+</body>
+</html>
+
+
+
+Uncaught ReferenceError: i is not defined
+    at display (Test.html:12)
+    at Test.html:
+
+Examle program on var keyword:
+---------------------------------
+<html>
+<head>
+</head>
+<body>
+<script language="javascript">
+function display()
+{
+for(var i=0;i<=5;i++)
+{
+console.log(i);
+}
+console.log(i);
+}
+display();
+</script>
+</body>
+</html>
+
+Note: The scope of the var keyword exist outside of the method also.
+
+
+const keyword:
+-----------------------------------------
+<html>
+<head>
+</head>
+<body>
+<script language="javascript">
+const a=10;
+console.log("a value is"+a);
+</script>
+</body>
+</html>
+
+
+ex2:
+---------------
+<html>
+<head>
+</head>
+<body>
+<script language="javascript">
+const a;
+a=10;
+console.log("a value is"+a);
+</script>
+</body>
+</html>
+
+Uncaught SyntaxError: Missing initializer in const declaration
+
+
+Arrow function :
+-------------------------------------------
+Arrow function in javascrit follows with a different syntax:
+equal sign before of the parenthesis and after paraenthesis arrow sign 
+Arros function concept executed by fast by the engine.
+
+
+
+<html>
+<head>
+</head>
+<body>
+<script language="javascript">
+const display=()=>
+{
+for(var i=0;i<=5;i++)
+{
+console.log(i);
+}
+}
+display();
+</script>
+</body>
+</html>
+
+
+this keyword:
+----------------------------------------
+here this is a keyword, in javascrit this keyword referes
+to the global object by default i.e
+
+it referes window object
+object contais(properties and methods)
+
+
+<html>
+<head>
+</head>
+<body>
+<script language="javascript">
+console.log(this);
+</script>
+</body>
+</html>
+
+output: window
+
+
+<html>
+<head>
+</head>
+<body>
+<script language="javascript">
+document.write(this);
+</script>
+</body>
+</html>
+
+window object
+
+
+Declare this keyword in normal function:
+---------------------------------------------
+
+<html>
+<head>
+</head>
+<body>
+<script language="javascript">
+function display()
+{
+document.write(2+2+"<br>");
+document.write(this);
+}
+display();
+</script>
+</body>
+</html>
+
+
+return: global object i.e window
+
+
+Example program on this keyword declared in Object:
+-------------------------------------------------------
+whenever we declare this keyword inside of any 
+object in that case this keyword return only that object
+related data only.
+
+
+
+<html>
+<head>
+</head>
+<body>
+<script language="javascript">
+const hello=
+{
+name:"shravan",
+sum: function(){
+console.log(2+2);
+console.log(this);
+}
+}
+hello.sum();
+</script>
+</body>
+</html>
+
+
+
+
+javascript objects:
+-------------------------------------------------
+A javascript object is an entity has state and it's behaviour
+(properties and methods)
+--> it is not a class based language .
+
+In java how we create Object:
+  first we create class 
+  after that we create object
+  
+  In javascript class doesn't exist
+  we create directly Object
+  
+  Note: we don't create any class, but we will create object directly.
+  
+  
+  How many ways we create Object in javascript:
+  --------------------------------------------
+  Here in javascript object creattion is mainly follows in 3 ways.
+  
+  1) By using Object literals
+  2) By using instance of an Object
+  3) By using Object  constructor
+  
+  
+  1. By using Object Literals:
+  -----------------------------------
+  In javascript object literal follows the given syntx:
+  Object ={Property1: value1,property2:value2................}
+
+  
+ <html>
+<head>
+</head>
+<body>
+<script language="javascript">
+
+employee={id:100,name:"shravan"}
+document.write(employee.id+"  "+employee.name);
+</script>
+</body>
+</html>
+ 
+ 
+ 
+ 
+ 2) By Using Object Instance:
+ -----------------------------------------
+ syntax:
+ var objectname=new Object();
+ 
+ <html>
+<head>
+</head>
+<body>
+<script language="javascript">
+
+var student=new Object();
+student.id=101;
+student.name="shravan";
+student.address="hyderabad";
+document.write(student.id+" "+student.name+" "+student.address);
+
+</script>
+</body>
+</html>
+
+
+3) By using Object constructor:
+----------------------------------------------
+<html>
+<head>
+</head>
+<body>
+<script language="javascript">
+
+function student(id,name,address)
+{
+this.id=id;
+this.name=name;
+this.address=address;
+}
+s=new student(11,"Akshay","nagpur");
+document.write(s.id+" "+s.name+" "+s.address);
+</script>
+</body>
+</html>
+
+
+Builtin methof of an Object:
+-----------------------------------
+1. assign()
+2.is()
+3. freeze()
+4.isfrozen()
+
+
+
+
+Example program on Object.assign() method:
+---------------------------------------------------
+
+<html>
+<head>
+</head>
+<body>
+<script language="javascript">
+var o1={a: 1,b: 4,c:5};
+var o3={d:1,e:2,f:3};
+var o2=Object.assign({c:4,d:8},o1);
+document.write(o2.a+" "+o2.b+"  "+o2.c+" "+o2.d);
+                 1       4        5        8
+</script>
+</body>
+</html>
+
+
+
+Example program on is() emthod in javascript:
+----------------------------------------------------------
+Object.is() method used to determine whether two values
+are same values or not.
+
+
+<html>
+<head>
+</head>
+<body>
+<h2>Object.is() method in javascript</h2>
+<script language="javascript">
+document.write(Object.is('Hello','Hello')+"<br>");
+document.write(Object.is('Hello','World')+"<br>");
+document.write(Object.is(null,null)+"<br>");
+document.write(Object.is('Hello','hello'));
+
+</script>
+</body>
+</html>
+
+
+Example program on freeze();
+--------------------------------------------
+when we apply freeze( ) method for any perticular object
+then taht object values doesn't modify or updated.
+
+<html>
+<head>
+</head>
+<body>
+
+<script language="javascript">
+var obj1={a:20,b:30};
+var obj2=Object.freeze(obj1);
+obj2.a=40;
+document.write(obj2.a);
+
+
+</script>
+</body>
+</html>
+
+
+
+Example program on isfrozen();
+-----------------------------------
+Using isfrozen() method we check the objects which are in freeze state or not
+
+
+<html>
+<head>
+</head>
+<body>
+
+<script language="javascript">
+var obj1={a:20,b:30};
+var obj2=Object.freeze(obj1);
+document.write(Object.isFrozen(obj2));
+</script>
+</body>
+</html>
+
+
+
+
+javascrit Date:
+------------------------------------------
+javascript date object exist with multiple
+builtin methods. using those methods we find the 
+date, year ,month  etc....
+
+
+Date object built-in methods:
+-----------------------------
+getDay()
+getFullYear()
+getHours()
+getMilliSeconds()
+getMinutes()
+
+<html>
+<head>
+</head>
+<body>
+<script language="javascript">
+var date=new Date();
+document.write(date.getDay()+"<br>");
+document.write(date.getHours()+"<br>");
+
+</script>
+</body>
+</html>
+
+
+
+Array Object in javscript:
+---------------------------------------------------
+in javascript Array is an Object represetns collection of 
+similer type of elements.
+
+Array Object in javascript created mainly in 3 ways:
+------------------------------------------------
+
+Those are
+1. By array literal
+2. By crating an instance of an array
+3. by using array constructor
+
+
+1. By Array Literals :
+---------------------------------------
+var arrayobject=[valu1,value2,...........]
+
+<html>
+<head>
+</head>
+<body>
+<script language="javascript">
+var names=["shravan","akshay","Arpit","nakul"];
+for(n=0;n<names.length;n++)
+{
+document.write(names[n]+"<br>");
+}
+</script>
+</body>
+</html>
+
+
+
+2. By creating an instance of an array:
+----------------------------------------------
+
+<html>
+<head>
+</head>
+<body>
+<script language="javascript">
+var student=new Array();
+student[0]="computers";
+student[1]="electronics";
+student[2]="maths";
+student[3]="Civil ";
+for(n=0;n<student.length;n++)
+{
+document.write(student[n]+"<br>");
+}
+</script>
+</body>
+</html>
+
+
+3.using Array constructor
+----------------------------
+<html>
+<head>
+</head>
+<body>
+<script language="javascript">
+var student=new Array("abc","bcd","cde");
+for(n=0;n<student.length;n++)
+{
+document.write(student[n]+"<br>");
+}
+
+</script>
+</body>
+</html>
+
+
+
+
+Array Methods in javacsript:
+-------------------------------------
+The following builtin methods supported by javascript.
+
+1. concat()
+2. filter()
+3. reverse()
+4. sort()
+
+
+
+1.
+<html>
+<head>
+</head>
+<body>
+<script language="javascript">
+var arr1=["nakul","arpit"];
+var arr2=["akshay","shravan"];
+var arr3=arr1.concat(arr2);
+
+document.write(arr3);
+</script>
+</body>
+</html>
+
+2. 
+
+<html>
+<head>
+</head>
+<body>
+<script language="javascript">
+var salary=[2000,4000,6000,8000];
+function test(sal)
+{
+return sal<5000;
+}
+document.write(salary.filter(test));
+
+</script>
+</body>
+</html>
+
+
+3. revers()
+<html>
+<head>
+</head>
+<body>
+<script language="javascript">
+var arr1=["Abc","Nbcd","Qde","Def"];
+arr1.sort();
+var arr2=arr1.reverse();
+document.write(arr2);
+</script>
+</body>
+</html>
+
+4. 
+
+
+
+
+
+Browser related Objects:
+----------------------------------
+1. window
+2. history
+3. screen
+
+
+1. window:
+----------------------
+alert()
+confirm()
+prompt()
+open()
+
+
+<html>
+<head>
+</head>
+<body>
+<script language="javascript">
+window.alert("alert is one of the method of window");
+</script>
+</body>
+</html>
+
+
+
+<html>
+<head>
+</head>
+<body>
+<script language="javascript">
+var a=parseInt(prompt("enter the a value"));
+confirm("a value is"+a);
+
+</script>
+</body>
+</html>
+
+
+open();
+----------------
+<html>
+<head>
+</head>
+<body>
+<script language="javascript">
+function display()
+{
+open("https://www.google.com");
+}
+display();
+</script>
+</body>
+</html>
+
+
+2. History Object:
+------------------------------
+forward()
+go()
+
+<html>
+<head>
+<script type="text/javascript">
+function msg()
+{
+
+window.history.forward();
+}
+function msg1()
+{
+window.history.go(2);
+}
+</script>
+</head>
+<body>
+<input type="button" value="for" onclick="msg()"/>
+<input type="button" value="go" onclick="msg1()"/>
+</body>
+</html>
+
+
+
+FormValidation:
+------------------------------
+<html>
+<head>
+<script type="text/javascript">
+function validateForm()
+{
+var un=document.Myform.na.value;
+var pa=document.Myform.pas.value;
+if(un=null||un=="")
+{
+alert("name can't be blank");
+return false;
+}
+else if(pa.length<6)
+{
+alert("password must contain atleast 6 characters");
+return false;
+}
+else
+{
+prompt("success");
+return true;
+}
+}
+
+</script>
+</head>
+<body>
+<form name="Myform">
+Enter the USerName:<input type="text" name="na" placeholder="enter name">
+<br>
+Enter the PassWord: <input type="password" name="pas" placeholder="enter password">
+<br>
+<br>
+<input type="submit" onclick="validateForm()" value="sign In">
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
