@@ -1,0 +1,522 @@
+
+We require mainly 2 appl softwares.
+
+1. node.js installation
+2. visual studio code
+
+
+react or react.js or react.jsx
+
+
+
+
+How to create a project in ReactJs:
+----------------------------------------
+here we follows the given steps
+
+step1: we create a one folder in any other drive name
+        D:\>test_reactjs
+step2: open vscode from file menu select open folder option
+step3: select our folder name in the existing  path
+step4: from the menu select terminal option 
+step5:from the terminal path create reactjs project in the following way
+      npx create-react-app projectname
+	  
+	  
+	  Ex: npx create-react-app react_demo
+OR
+
+      -->npm cache clean --force
+	  -->npm install npm@latest -g
+	  -->npm install
+	  -->npx create-react-app react_demo
+	  
+OR    -->npm install -g create-react-app
+         npx create-react-app react_demo
+		 
+		 
+step6: enter into our reactjs project we type as follows    
+       d:>test_react>
+	   d:>test_react>cd react_demo
+	   d:>test_reat>react_demo>-
+	   
+step7:  we will start the project 
+        npm start
+		
+		
+		
+How in react it display content on Browser:
+		----------------------------------------
+	By default the data flow from 
+	
+	     app.js file -->index.js -->index.html
+		 
+		     OR 
+ index.js->index.html
+			 
+ Introduction:
+ ----------------
+ react or reactjs or react.js 
+ it is an open source front end application depends on javscript 
+ library.
+ 
+ Developed by Facebook organization,
+ " Jordan walke " in the year 2013.
+ 
+ 
+ reactjs     Angular   vue
+ 
+ 
+ using reactjs application we develop user interface concepts on a webpage.
+ 
+ React is not a framework ,  Angular we say that it is a framework,
+ React js open source application, 
+ react js application useful for to develop user interface concepts
+ 
+ 
+ Features of React Js application:
+ -----------------------------------------
+ 
+ ->it follows jsx concept (javascript xml synatx)
+ ->react js application we called as component based application 
+    (Single page application)
+	here we reused same components in the application 
+ -> Uni directional based application (One directional flow of data)
+ 
+	
+		 jsx (javascript xml)
+		 --------------------------------
+jsx stands for javscript xml.
+jsx allows us to write HTML in React
+jsx makes it easier to write and edit HTML in React.
+
+
+Babel Compiler:
+-----------------------------
+In Reactjs here babel is called as javascript compiler .
+it converts javscript library code into html code.
+
+here babel it converst JSX code into normal html code.
+
+
+
+
+JSX code:
+==========================================
+	  
+index.js
+---------------------------------------------------------------------	  
+	  import React from 'react';
+import ReactDOM from 'react-dom';
+
+
+
+
+ReactDOM.render( <h1>Hello World</h1>,  document.getElementById('root'));
+
+
+index.html
+-----------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+  </head>
+  <body>
+  
+    <div id="root"></div>
+    
+  </body>
+</html>
+
+
+
+div tag in jsx:
+-----------------------------------------------------------------------
+in ReactDOM  whenever we add multiple elements or tags
+then we should include <div> tag.
+
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+
+
+
+ReactDOM.render( <div><h1>Hello World</h1> <p>welcome to react</p></div>,  document.getElementById('root'));
+
+
+
+Expressions inJSX:
+-------------------------------------
+we need to add expression jsx then we should include
+inside of the curly brackets.
+
+{}
+
+
+
+
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+
+
+ReactDOM.render( <h2>shravan {2+4}</h2>,  document.getElementById('root'));
+
+
+Ex2:
+----------------------
+
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+
+const name='corporate Trainer'
+ReactDOM.render( <h2>shravan {name}</h2>,  document.getElementById('root'));
+
+
+-----------------------------
+Ex3:
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+
+const name=(
+<ul>
+<ol>Apples</ol>
+<ol>Mangos</ol>
+<ol>Cherris</ol>
+</ul>
+
+)
+ReactDOM.render( <h2>{name}</h2>,  document.getElementById('root'));
+
+
+Ex4:
+------------------------------------
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+
+const name=(
+<table border="1">
+<thead>
+<th>Employee Name</th>
+<th>Employee Designation</th>
+</thead>
+<tbody>
+<tr>
+<td>Shravan Kumar</td>
+<td>Corporate Trainer</td>
+</tr>
+<tr>
+<td>Kumar</td>
+<td>developer</td>
+</tr>
+</tbody>
+</table>
+)
+ReactDOM.render( <h2>{name}</h2>,  document.getElementById('root'));
+
+
+
+components in React Js:
+-----------------------------
+component is one of the part or position on web page.
+in react js to create a component then user follows in
+2 ways.
+
+1. fucntional components
+2. class components
+
+
+1. fucntion components:
+-----------------------------------------
+
+App.js
+-------------------
+
+import React from 'react'
+import Test from './components/Test'
+import Test1 from './components/Test1'
+
+export default function App()
+{
+  return(
+    <div>
+<h2>welcome to functional component</h2>
+<Test></Test>
+<Test1></Test1>
+</div>
+  )
+}
+
+
+in this example i create one folder under src 
+i.e components
+
+inside of this components folder we creted two child functional components.
+
+
+
+
+
+Test1.js
+----------------
+import React from 'react'
+function Test1()
+{
+    return(
+        <h2>child 1 component</h2>
+    )
+}
+export default Test1
+
+
+
+
+Test.js
+----------
+import React from 'react'
+function Test()
+{
+    return(
+        <h2>this is child component</h2>
+    )
+}
+export default Test
+
+
+index.js
+-------------------------------
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+
+reportWebVitals();
+
+
+
+
+
+
+Example2:
+-----------------------
+App.js
+--------
+import React from 'react'
+import Table from './components/Table'
+
+
+function App()
+{
+  return (
+<div>
+<h1>This is Root component in React</h1>
+<Table></Table>
+</div>
+  )
+}
+export default App
+
+
+
+Table.js
+---------------------------
+import TableHeader from './TableHeader'
+import TableBody from './TableBody'
+import React from 'react'
+
+export default function Table()
+{
+    return(
+        <div>
+        <table border="2">
+        <TableHeader></TableHeader>
+        <TableBody></TableBody>
+        </table>
+        </div>
+    )
+}
+
+
+TableHeader.js
+------------------
+import React from 'react'
+export default function TableHeader()
+{
+    return (
+        <thead>
+        <th>Employee Name</th>
+        <th>Employee Designation</th>
+        </thead>
+    )
+}
+
+
+
+TableBody.js
+---------------------
+import React from 'react'
+export default function TableBody()
+{
+    return(
+        <tbody>
+        <tr>
+        <td>Shravan</td>
+        <td>Trainer</td>
+        </tr>
+        </tbody>
+    )
+}
+
+
+
+
+
+Arrow function in React:
+--------------------------------
+import TableHeader from './TableHeader'
+import TableBody from './TableBody'
+import React from 'react'
+
+const Table=()=>
+{
+    return(
+        <div>
+        <table border="2">
+        <TableHeader></TableHeader>
+        <TableBody></TableBody>
+        </table>
+        </div>
+    )
+}
+export default Table
+
+
+
+
+
+2. Class Component:
+--------------------------------------
+syntax:
+
+
+
+import React ,{ Component} from 'react';
+
+class classname extends Component{
+render()
+{
+return(
+jsx code
+)
+
+}
+
+}
+export default classname;
+
+
+
+App.js
+---------------
+import React from 'react'
+import Table from './components/Table'
+
+
+
+function App()
+{
+  return (
+<div>
+<h1>This is Root component in React</h1>
+<Table></Table>
+</div>
+  )
+}
+export default App
+
+
+
+
+Table.js
+-----------------
+import React,{Component} from 'react'
+import TableHeader from './TableHeader'
+import TableBody from './TableBody'
+
+class Table extends Component{
+    render()
+    {
+        return(
+            <table border="2">
+            <TableHeader></TableHeader>
+            <TableBody></TableBody>
+            </table>
+        )
+    }
+}
+export default Table
+
+
+TableBody.js
+-----------------------------------------------
+import React, {Component} from 'react'
+
+export default class TableBody extends Component
+{
+    render()
+    {
+        return (
+            <tbody>
+            <tr>
+            <td>Shravan</td>
+            <td>Corporate Traier</td>
+            </tr>
+            </tbody>
+        )
+    }
+}
+
+
+
+TableHeader.js
+----------------------------------------------------
+import React, { Component } from 'react'
+
+export default class TableHeader extends Component{
+    render()
+    {
+        return(
+            <thead>
+            <th>Employee Name</th>
+            <th>Employee Designation</th>
+            </thead>
+        )
+    }
+}
+
+
+
+
+
+
+
+
+
+	
+	  
+	  
+
