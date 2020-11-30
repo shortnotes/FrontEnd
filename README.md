@@ -5,6 +5,6 @@
 [Day 02: CSS](/CSS_notes.txt)
 
 [Day 03: Javascript](/javascript.txt)
-[Day 04: React JS Intro](ReactJS Intro.txt
 
+[Day 04: React JS Intro](ReactJS Intro.txt)
 
