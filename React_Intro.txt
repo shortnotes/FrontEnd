@@ -510,13 +510,704 @@ export default class TableHeader extends Component{
 
 
 
+Props: 
+properties
+
+The props works as for sending or pass the data from one component into another component.
+we declare in reactjs as props
+
+React here the data flow between from one component to another only 
+based on uni directional
+
+Once we pass the  data from one component into another component then
+after we cannot change the data .
 
 
 
 
+
+ Example program on functional components with props 
+App.js
+-------------------------------------
+import React from 'react'
+import Test from './Test'
+
+function App ()
+{
+    
+        return(
+            <div>
+<Test name="shravan reddy"  desig="Corporate Trainer"></Test>
+<Test name="Ajay reddy"  desig="Corporate Trainer"></Test>
+<Test name="Surender reddy"  desig="Corporate Trainer"></Test>
+</div>
+        )
+    
+}
+export default App
+
+
+
+Test.js
+--------------------------------------
+import React from 'react'
+
+const Test=(props)=>
+{
+    return(
+        <div>
+        <h1>Hello How r u  {props.name} works as {props.desig}</h1>
+        </div>
+
+    )
+}
+export default Test
 
 
 	
+	
+	
+	Example program on Class component with props:
+	====================================================
+
+	
+	
+	App.js
+	-----------------------------------
+import React, { Component } from 'react'
+import Test from './Test'
+
+class App extends Component
+{
+    render()
+    {
+                return(
+            <div>
+<Test name="shravan reddy"  desig="Developer"></Test>
+<Test name="Ajay reddy"  desig="Trainer"></Test>
+<Test name="Surender reddy"  desig="Tester"></Test>
+</div>
+        )
+                }
+    
+}
+export default App
+
+
+
+Test.js:
+---------------------------------------------
+
+import React, {Component} from 'react'
+
+class Test extends Component
+{
+    render()
+    {
+        return(
+<h2>Name is {this.props.name} Designation is: {this.props.desig}</h2>
+
+        )
+    }
+
+}
+export default Test
+
+
+
+
+
+
+React State and setState():
+--------------------------------------------
+The state is a builtin object in React component.
+in the state object we store property values that belong to the component.
+
+when the state object changes , the component also renders.
+
+
+In react if we define state object then we follows the given syantx:
+
+
+class classname extends Component{
+constructor(props)
+{
+supper(props)
+this.state={
+-------
+---------------
+-----------------
+}
+}
+}
+
+
+
+
+
+
+
+
+index.js:
+--------------------------------------------------------------
+
+import React from 'react'
+import ReactDOM from 'react-dom'
+import StudentComponent from './StudentComponent'
+
+
+
+ReactDOM.render( <StudentComponent/>,  document.getElementById('root'));
+
+
+
+
+
+StudentComponent.js
+---------------------------------------------
+
+import React, {Component} from 'react'
+
+class StudentComponent extends Component
+{
+
+constructor(props)
+{
+super(props)
+this.state=
+{
+    firstName:"reddy",
+    lastName:"shravan",
+    rollNo:101,
+    age: 25
+}
+
+}
+
+
+render()
+{
+    return(
+<div>
+<h1>First name: {this.state.firstName}</h1>
+<h1>last name: {this.state.lastName}</h1>
+<h1>Roll No is: {this.state.rollNo}</h1>
+<h1>Age is: {this.state.age}</h1>
+</div>
+
+    )
+}
+
+}
+export default StudentComponent
+    
+
+	
+	
+	*****setState() method :
+	
+	If user wants to change the state object properties values in run time
+	then user follows done of the hook i.e setState() method includes in
+	application.
+	
+	
+	In the below example program using event trigger Mechanism we invoked
+	setState() method in React.
+	
+	
+	
+	
+	
+	
+	StudentComponent.js
+	========================
+	import React, {Component} from 'react'
+
+class StudentComponent extends Component
+{
+
+constructor(props)
+{
+super(props)
+this.state=
+{
+    firstName:"kumar",
+    lastName:"shravan",
+    rollNo:101,
+    age: 25
+}
+}
+updateStudent(){
+    this.setState(
+        {
+            rollNo: 102,
+            age: 30
+        }
+    )
+}
+
+render()
+{
+    return(
+<div>
+<h1>First name: {this.state.firstName}</h1>
+<h1>last name: {this.state.lastName}</h1>
+<h1>Roll No is: {this.state.rollNo}</h1>
+<h1>Age is: {this.state.age}</h1>
+<button type="button" onClick={()=>this.updateStudent()}>update student</button>
+</div>
+
+    )
+}
+
+}
+export default StudentComponent
+
+
+
+Note: 
+
+
+The difference between state object and Props is
+
+-------------------------------------------------------
+
+1. using props we pass the data from one component into another component
+  using state object we pass the data within the component.
+2. in props mechanism we cannopt possible to change the properties values
+   In state object mechanism it possible to change the properties values.
+   
+3. In props there no hook method implementation
+  in state object using setState() we change the properties values at run time
+  
+  
+  
+  
+  
+  
+  Handling Events in React:
+  ---------------------------------------------------------
+  
+  Handling Events with react elements is very similer to handling
+events on DOM elemets.
+
+There are few differences between the events.
+
+
+In React application events are named using camelCase styles. 
+
+
+How we apply the event in React application  is:
+
+<button onClick={button is clicked} >
+clcik the button
+</button>
+
+
+if u take example in javascript how we apply the event is
+
+<button onClick="display()">
+click  here
+</button>
+
+
+
+
+
+Handling onClick event in the class component example:
+--------------------------------------------------------
+In the below example represents Event Trigger Mechanism in react
+application. in this example we create one of the event i.e onClick()
+
+
+index.js
+------------------------------------
+import React from 'react'
+import ReactDOM from 'react-dom'
+import ClassClick from './ClassClick'
+
+
+
+
+ReactDOM.render( <ClassClick/>,  document.getElementById('root'));
+
+
+
+ClassClick.js
+--------------------------------------------------------
+
+import React, {Component} from 'react'
+
+class ClassClick extends Component{
+
+    clickHandler()
+    {
+console.log('onclick event triggered')
+    }
+render()
+{
+    return(
+<div>
+<button onClick={this.clickHandler}>click here</button>
+</div>
+
+    )
+}
+
+}
+export default ClassClick
+
+
+
+
+
+
+
+Example2:  using App.js file 
+---------------
+
+index.js 
+---------------------------------------------------
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './App'
+
+
+
+
+ReactDOM.render( <App/>,  document.getElementById('root'));
+
+
+ClassClick.js
+-------------------------------------------------------------
+
+import React, {Component} from 'react'
+
+class ClassClick extends Component{
+
+    clickHandler()
+    {
+console.log('onclick event triggered')
+    }
+render()
+{
+    return(
+<div>
+<button onClick={this.clickHandler}>click here</button>
+</div>
+
+    )
+}
+
+}
+export default ClassClick
+
+
+
+App.js
+---------------------------
+import React,{ Component} from 'react'
+import ClassClick from './ClassClick'
+
+class App extends Component{
+    render()
+    {
+        return(
+            <div>
+            <ClassClick></ClassClick>
+            </div>
+        )
+    }
+}
+export default App
+
+
+
+
+
+handling onclick event inthe functional component:
+===================================================================
+
+index.js-
+--------
+import React from 'react'
+import ReactDOM from 'react-dom'
+import FunctionClick from './FunctionClick';
+
+
+ReactDOM.render( <FunctionClick/>,  document.getElementById('root'));
+
+
+
+FunctionaClick.js
+---------------------------------------------------------------
+import React from 'react'
+function FunctionClick()
+{
+    function clickHandler()
+    {
+        console.log("Functional component event")
+    }
+
+return(
+    <div>
+    <button onClick={clickHandler}>click here</button>
+    </div>
+)
+}
+export default FunctionClick
+
+
+
+
+
+Binding Event in React:
+--------------------------------------------
+In react Applicaion in eventhandling if we declare the keyword as this
+then it return the current object only.
+
+but if we declare again this keyword in the method definition then we get Error 
+because the reason is this keyword exist in multiple location.
+
+So over come this we implement bind() method in event handling mechanism.
+'
+
+
+
+
+
+
+EventBind.js
+---------------------------------------------------------------------
+import React,{Component} from 'react'
+
+class EventBind extends Component{
+    constructor(){
+        super()
+        this.state={
+            message: "Hello"
+        }
+    }
+    clickHandler()
+    {
+        console.log(this)
+        this.setState({message: "good bye"})
+    }
+    render()
+    {
+        return(
+<div>
+<button onClick={this.clickHandler}>Click here</button>
+</div>
+
+        )
+    }
+}
+export default EventBind
+
+
+
+TypeError: Cannot read property 'setState' of undefined
+
+
+
+Afetr Adding bind() method:
+=============================================================================
+
+
+import React,{Component} from 'react'
+
+class EventBind extends Component{
+    constructor(){
+        super()
+        this.state={
+            message: "Hello"
+        }
+    }
+    clickHandler()
+    {
+        console.log(this)
+        this.setState({message: "good bye"})
+    }
+    render()
+    {
+        return(
+<div>
+<button onClick={this.clickHandler.bind(this)}>Click here</button>
+</div>
+
+        )
+    }
+}
+export default EventBind
 	  
+	  
+
+
+	  
+Styles and CSS in React js Application:
+-------------------------------------------------
+In reactjs application if we add styles using CSS then we follows the given ways.
+
+Those are
+
+1. Regular CSS Style sheets
+2. Inline style sheets
+3) CSS modules.
+
+
+
+1. Regular CSS style sheet:
+-----------------------------------------------
+If we add css using as regular style mechanism then we follows the given ways
+
+--> we create a seperate style css file
+-->create a compoent with reactjs applicaation
+-->we import css code in react js application
+
+
+
+
+MyStyle.js
+-------------------------------
+
+import React,{Component} from 'react'
+import './index.css'
+
+class MyStyle extends Component{
+    render()
+    {
+        return(
+<div>
+<h2>Welcome to Regular style in React</h2>
+<p>This is a Paragraph tag</p>
+</div>
+        )
+    }
+}
+export default MyStyle
+
+
+
+index.css
+-----------------------------------------------
+body{
+  
+    padding: 40px;
+    text-align: center;
+    background-image: url('ganesh.jpg');
+    background-color:yellow;
+}
+h2{
+    color: red;
+    background-color:black;
+}
+p{
+    color: red;
+    background-color:black;
+}
+
+
+
+index.js
+-----------------------------------------------------
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+import MyStyle from './MyStyle'
+
+
+ReactDOM.render( <MyStyle/>,  document.getElementById('root'));
+
+
+
+
+2. inline styles:
+---------------------------------------------------------------------
+
+MyStyle.js
+------------------------------
+import React from 'react'
+
+const heading={
+    color: 'orange',
+    fontSize: '70px',
+    textAlign: 'center',
+    backgroundColor: 'yellow'
+}
+function MyStyle()
+{
+    return(
+        <h2 style={heading}> Welcome to Inline Style sheet in React</h2>
+    )
+}
+export default MyStyle
+
+
+
+index.js
+-----------------------------
+
+import ReactDOM from 'react-dom'
+import React from 'react'
+import MyStyle from './MyStyle'
+
+ReactDOM.render(<MyStyle/>, document.getElementById("root"))
+
+
+
+3) CSS modules:
+----------------------------------
+In react js applicaion if we want add styles using css modules then
+we follows the given ways.
+
+--> we should create a seperate file with the extension as filename.module.css
+-->we create a component
+--> we import module.css file in out component 
+     ex: import styles from './mystyles.module.css'
+	 
+	 
+	 
+	 MyStyle.js
+	 --------------------------------------
+	 
+import React from 'react'
+import styles from './mystyle.module.css'
+
+class MyStyle extends React.Component{
+    render()
+    {
+        return(
+
+            <h2 className={styles.body}>Module.css related styles</h2>
+        )
+    }
+}
+export default MyStyle
+
+
+mystyle.module.css
+--------------------------
+body{
+    color:red;
+    background-image: url('ganesh.jpg');
+}
+
+
+index.js
+------------------------
+
+import ReactDOM from 'react-dom'
+import React from 'react'
+import MyStyle from './MyStyle'
+
+ReactDOM.render(<MyStyle/>, document.getElementById("root"))
+
+
+
+
+
+
+
 	  
 
